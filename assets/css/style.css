@@ -1,0 +1,46 @@
+:root {
+    --dark-gray: #3a3b3c;
+    --light-gray: #d3d3d3;
+    --highlight: #3792cb;
+}
+
+/* Style everything */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* End of everythings style */
+
+/* Styling for header */
+
+header {
+    background-color: var(--dark-gray);
+}
+
+header h1 {
+    padding-left: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex: wrap;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--highlight);
+}
+
+/* Styling for hero */
+.hero {
+    background-image: url(../images/Example.webp);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-position: 80%;
+}
+
+.subtitle {
+    align-self: flex-end;
+}
