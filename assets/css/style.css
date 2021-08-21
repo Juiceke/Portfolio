@@ -73,11 +73,20 @@ header nav ul li a {
     flex-wrap: wrap;
     background-position: 80%;
     height: 200px;
+    position: relative;
 }
 
 .subtitle {
-    -webkit-align-self: flex-end;
-    align-self: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    right: 0;
+    bottom:0;
+    background-color: var(--highlight);
+    color: var(--dark-gray);
+    margin-bottom: 15px;
+    margin-right: 50px;
+    padding: 10px 10px 10px 10px;
 }
 
 /* Styling for footer */
@@ -105,6 +114,8 @@ footer h1:after {
     border-right: 4px solid var(--dark-gray);
     top: 3px;
     left: 10px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 footer nav ul {
@@ -122,10 +133,4 @@ footer nav ul li {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-}
-
-/* insert vertical line */
-
-.vertical-line {
-
 }
