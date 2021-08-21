@@ -24,7 +24,7 @@ header {
     background-color: var(--dark-gray);
     display: flex;
     justify-content: space-between;
-    flex: wrap;
+    flex-wrap: wrap;
     margin-bottom: 15px;
 }
 
@@ -47,7 +47,6 @@ header nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
     margin-right: 70px;
 }
 
@@ -79,4 +78,54 @@ header nav ul li a {
 .subtitle {
     -webkit-align-self: flex-end;
     align-self: flex-end;
+}
+
+/* Styling for footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex: wrap;
+}
+footer h1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 22px;
+    margin-left: 100px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    text-align: right;
+}
+
+footer h1:after {
+    content: "" ;
+    width: 0;
+    height: 70px;
+    position: relative;
+    border-right: 4px solid var(--dark-gray);
+    top: 3px;
+    left: 10px;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-right: 20px;
+}
+
+footer nav ul li {
+    border-bottom: 0.21em solid var(--dark-gray);
+    line-height: 2;
+    margin: 28px 90px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* insert vertical line */
+
+.vertical-line {
+
 }
