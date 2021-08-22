@@ -154,7 +154,7 @@ header nav ul li a {
 .info h1:after {
     content: "" ;
     width: 0;
-    height: 70px;
+    height: 130px;
     position: relative;
     border-right: 4px solid var(--dark-gray);
     top: 3px;
@@ -170,8 +170,84 @@ header nav ul li a {
     margin-top: 28px;
     margin-right: 200px;
     margin-left: -130px;
+    margin-bottom: 30px;
     width: 200px;
     flex-grow: 3;
+    
 }
 
 /* Styling for the work section */
+
+#work {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+#work h1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 22px 10px 15px 139px;
+    flex: 1;
+}
+
+#work h1:after {
+    content: "" ;
+    width: 0;
+    height: 1050px;
+    position: relative;
+    border-right: 4px solid var(--dark-gray);
+    bottom: 14px;
+    left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    flex-grow: 6.4;
+    flex-flow: column wrap;
+}
+
+.large {
+    border: 4px solid var(--highlight);
+    width: 990px;
+    height: 600px;
+    margin: 6px;
+}
+
+.large img {
+    display: flex;
+    flex: wrap;
+    width: 982px;
+    height: 592px;
+    opacity: 0.5;
+    transition: 150ms;
+}
+
+
+.small img { 
+    border: 4px solid var(--highlight);
+    width: 487px;
+    height: 200px;
+    margin: 6px;
+    margin-top: 10px;
+    opacity: 0.5;
+    transition: 150ms;
+    
+}
+
+.large img:hover, .small img:hover {
+    content: "";
+    opacity: 1;
+    transition: 150ms;
+}
+
+/* div that makes row go to next line */
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
