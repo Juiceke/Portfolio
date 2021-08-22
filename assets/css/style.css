@@ -208,7 +208,7 @@ header nav ul li a {
     flex-wrap: wrap;
     flex: 1;
     flex-grow: 6.4;
-    flex-flow: column wrap;
+    position: relative;
 }
 
 .large {
@@ -216,6 +216,7 @@ header nav ul li a {
     width: 990px;
     height: 600px;
     margin: 6px;
+    position: relative;
 }
 
 .large img {
@@ -227,7 +228,6 @@ header nav ul li a {
     transition: 150ms;
 }
 
-
 .small img { 
     border: 4px solid var(--highlight);
     width: 487px;
@@ -236,7 +236,6 @@ header nav ul li a {
     margin-top: 10px;
     opacity: 0.5;
     transition: 150ms;
-    
 }
 
 .large img:hover, .small img:hover {
@@ -245,9 +244,53 @@ header nav ul li a {
     transition: 150ms;
 }
 
+.project-text {
+    display: flex;
+    flex: wrap;
+    position: absolute;
+    background-color: var(--highlight);
+    z-index: 9999;
+}
+
+.project-text-upleft {
+    display: flex;
+    flex: wrap;
+    position: absolute;
+    background-color: var(--highlight);
+    z-index: 9999;
+    left: 8px;
+    bottom: 428px;
+}
+
+.project-text-upright {
+    display: flex;
+    flex: wrap;
+    position: absolute;
+    background-color: var(--highlight);
+    z-index: 9999;
+    right: 192px;
+    bottom: 428px;
+}
+
+.project-text-bottomright {
+    display: flex;
+    flex: wrap;
+    position: absolute;
+    background-color: var(--highlight);
+    z-index: 9999;
+    right: 192px;
+    bottom: 196px;
+}
+
+.project-text-bottomleft {
+    display: flex;
+    flex: wrap;
+    position: absolute;
+    background-color: var(--highlight);
+    z-index: 9999;
+    left: 8px;
+    bottom: 196px;
+}
+
 /* div that makes row go to next line */
 
-.break {
-    flex-basis: 100%;
-    height: 0;
-}
