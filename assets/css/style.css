@@ -12,6 +12,11 @@
 }
 /* End of everythings style */
 
+/* make all h1's the same size */
+h1 {
+    font-size: 2em;
+}
+
 /* style body */
 body {
     background-color: var(--light-gray);
@@ -90,23 +95,20 @@ header nav ul li a {
 }
 
 /* Styling for footer */
-
-footer {
-    display: flex;
-    justify-content: space-between;
-    flex: wrap;
-}
-footer h1 {
+#contact-me {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 22px;
-    margin-left: 100px;
-    margin-right: 10px;
-    margin-bottom: 15px;
-    text-align: right;
 }
 
-footer h1:after {
+#contact-me h1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 22px 10px 15px 100px;
+    text-align: right;
+    flex: 1;
+}
+
+#contact-me h1:after {
     content: "" ;
     width: 0;
     height: 70px;
@@ -118,19 +120,58 @@ footer h1:after {
     flex-wrap: wrap;
 }
 
-footer nav ul {
+#contact-me nav ul {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     list-style: none;
     margin-right: 20px;
+    flex: 1;
 }
 
-footer nav ul li {
+#contact-me nav ul li {
     border-bottom: 0.21em solid var(--dark-gray);
     line-height: 2;
     margin: 28px 90px;
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
 }
+
+/* Styling for the About section */
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info h1 {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: right;
+    flex: 1;
+    margin: 22px 10px 15px 126px
+}
+
+.info h1:after {
+    content: "" ;
+    width: 0;
+    height: 70px;
+    position: relative;
+    border-right: 4px solid var(--dark-gray);
+    top: 3px;
+    left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info-p {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    margin-top: 28px;
+    margin-right: 200px;
+    margin-left: -130px;
+    width: 200px;
+    flex-grow: 3;
+}
+
+/* Styling for the work section */
