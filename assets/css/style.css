@@ -221,7 +221,7 @@ header nav ul li a {
 
 .large img {
     display: flex;
-    flex: wrap;
+    flex-wrap: wrap;
     width: 982px;
     height: 592px;
     opacity: 0.5;
@@ -246,7 +246,7 @@ header nav ul li a {
 
 .project-text {
     display: flex;
-    flex: wrap;
+    flex-wrap: wrap;
     position: absolute;
     background-color: var(--highlight);
     z-index: 9999;
@@ -254,7 +254,7 @@ header nav ul li a {
 
 .project-text-upleft {
     display: flex;
-    flex: wrap;
+    flex-wrap: wrap;
     position: absolute;
     background-color: var(--highlight);
     z-index: 9999;
@@ -264,7 +264,7 @@ header nav ul li a {
 
 .project-text-upright {
     display: flex;
-    flex: wrap;
+    flex-wrap: wrap;
     position: absolute;
     background-color: var(--highlight);
     z-index: 9999;
@@ -274,7 +274,7 @@ header nav ul li a {
 
 .project-text-bottomright {
     display: flex;
-    flex: wrap;
+    flex-wrap: wrap;
     position: absolute;
     background-color: var(--highlight);
     z-index: 9999;
@@ -284,7 +284,7 @@ header nav ul li a {
 
 .project-text-bottomleft {
     display: flex;
-    flex: wrap;
+    flex-wrap: wrap;
     position: absolute;
     background-color: var(--highlight);
     z-index: 9999;
@@ -292,5 +292,64 @@ header nav ul li a {
     bottom: 196px;
 }
 
-/* div that makes row go to next line */
+/* MediaQuery for smaller desktop screens and smaller */
+@media screen and (max-width: 1026px) {
+    /* about */
+    .info h1 {
+        left: 13%;
+        position: absolute;
+        text-align: center;
+        width: 50%;
+        border-bottom: 2px solid black;
+        padding-left: 210px;
+    }
 
+    .info h1:after {
+        content: none;
+    }
+
+    .info-p {
+        margin: 120px 100px 0 130px;
+    }
+
+    /* work */
+    #work h1 {
+        left: 120px;
+        position: absolute;
+        border-bottom: 2px solid black;
+        width: 50%;
+        padding-left: 215px;
+    }
+
+    #work h1:after {
+        content: none;
+    }
+
+    .projects {
+        margin-top: 80px;
+    }
+
+    .project-text-upleft {
+        bottom: 404px;
+        background-color: var(--highlight);
+        left: 10px
+    }
+
+    .project-text-upright {
+        right: 31px;
+        bottom: 404px;
+    }
+
+    .project-text-bottomleft {
+        bottom: 184px;
+        left: 10px;
+    }
+
+    .project-text-bottomright {
+        right: 31px;
+        bottom: 184px;
+    }
+
+
+    
+}
