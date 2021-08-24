@@ -22,9 +22,7 @@ body {
     background-color: var(--light-gray);
     font-family: Helvetica, Verdana, Arial;
 }
-
-/* Styling for header */
-
+/* Styling for the header */
 header {
     background-color: var(--dark-gray);
     display: flex;
@@ -67,7 +65,6 @@ header nav ul li a {
     padding: 10px 15px;
 }
 
-
 /* Styling for hero */
 .hero {
     background-image: url(../images/Example.webp);
@@ -95,44 +92,47 @@ header nav ul li a {
 }
 
 /* Styling for footer */
-#contact-me {
+
+footer {
+    background-color: var(--dark-gray);
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
+    margin-bottom: 15px;
 }
 
-#contact-me h1 {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 22px 10px 15px 100px;
-    text-align: right;
-    flex: 1;
+footer h1 {
+    padding-left: 30px;
+    padding-top: 15px; 
+    margin-bottom: 15px;
+    margin-top: 15px;
+    color: var(--dark-gray);
+    background-color: var(--highlight);
+    width: 240px;
 }
 
-#contact-me h1:after {
-    content: "" ;
-    width: 0;
-    height: 70px;
-    position: relative;
-    border-right: 4px solid var(--dark-gray);
-    top: 3px;
-    left: 10px;
-    display: flex;
-    flex-wrap: wrap;
+footer nav {
+    margin: 30px 0;
 }
 
-#contact-me nav ul {
-    display: flex;
-    flex-wrap: wrap;
+footer nav ul {
     list-style: none;
-    margin-right: 610px
-}
-
-#contact-me nav ul li {
-    border-bottom: 0.21em solid var(--dark-gray);
-    line-height: 1;
-    margin: 44px 30px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 70px;
+}
+
+footer nav ul li {
+    border-bottom: 0.21em solid var(--highlight);
+    line-height: 2;
+    margin-right: 10px;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: var(--highlight);
+    padding: 10px 15px;
 }
 
 /* Styling for the About section */
@@ -350,49 +350,46 @@ header nav ul li a {
     }
 
     /* Contact */
-    #contact-me h1 {
-        border-bottom: 2px solid black ;
-        padding-left: 200px;
-        margin-left: 220px;
-        width: 30%;
-        text-align: center;
-        margin-top: 100px;
+    footer {
+        background-color: var(--dark-gray);
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 15px;
     }
-
-    #contact-me h1:after {
-        content: none;
+    
+    footer h1 {
+        padding-left: 30px;
+        padding-top: 15px; 
+        margin-bottom: 15px;
+        margin-top: 15px;
+        color: var(--dark-gray);
+        background-color: var(--highlight);
+        width: 240px;
     }
-
-    footer ul{
+    
+    footer nav {
+        margin: 30px 0;
+    }
+    
+    footer nav ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-right: 70px;
+    }
+    
+    footer nav ul li {
+        border-bottom: 0.21em solid var(--highlight);
         line-height: 2;
+        margin-right: 10px;
     }
     
     footer nav ul li a {
         text-decoration: none;
-        color: black;
-    }
-
-    .contacts {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-
-    }
-    
-    .table {
-        display: table;
-    }
-
-    ul#horizontal-list {
-        min-width: 1300px;
-        list-style: none;
-        padding-left: 620px;
-        text-align: center;
-    }
-
-    ul#horizontal-list li{
-        display: inline;
+        color: var(--highlight);
+        padding: 10px 15px;
     }
     
     
