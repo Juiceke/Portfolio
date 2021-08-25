@@ -356,7 +356,7 @@ footer nav ul li a {
     .project-text-bottomright {
         right: auto;
         left: 893px;
-        bottom: 184px;
+        bottom: 100px;
     }
 
     /* Contact */
@@ -500,25 +500,25 @@ footer nav ul li a {
     }
 
     .project-text-upleft {
-        bottom: 2140px;
+        bottom: 1821px;
         left: 248px;
     }
 
     .project-text-bottomleft {
         left: 248px;
-        bottom: 1596px;
+        bottom: 1277px;
     }
 
     .project-text-upright {
         left: 248px;
         right: auto;
-        bottom: 1052px;
+        bottom: 733px;
     }
 
     .project-text-bottomright {
         left: 248px;
         right: auto;
-        bottom: 509px;
+        bottom: 190px;
     }
 
 }
